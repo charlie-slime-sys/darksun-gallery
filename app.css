@@ -1,13 +1,68 @@
-/* style.css */
+@import url('https://fonts.googleapis.com/css2?family=Pixelify+Sans:wght@400..700&display=swap');
+
+* {
+  box-sizing: border-box;
+}
+
+:root {
+  --black: #000;
+  --white: #fff;
+  --green: #11ff00;
+  --darkgreen: #001200;
+  --popgreen: #076600;
+  --popgreentwo:#10f70037;
+}
+
+
+/* main */
 
 body {
   margin: 0;
-  font-family: Arial, sans-serif;
+  font-family: "Pixelify Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 700;
+  font-style: normal;
+}
+
+.fill {
+    position: fixed;
+    top: 0; 
+    left: 0; 
+    width: 100%; 
+    height: 100%; 
+    z-index: -1; 
+    object-fit: cover;
 }
 
 .heading {
   text-align: center;
-  margin: 20px 0;
+  margin: 0;
+  background-color: var(--darkgreen);
+  color: var(--green);
+  border: 1px solid var(--green);
+  padding: 1vh;
+
+}
+
+.container {
+  background-color: var(--black);
+  width: 70%;
+  justify-self: center;
+  display: flex;
+  align-content: center;
+  flex-direction: column;
+  border: 1px solid var(--popgreentwo);
+}
+
+/* socials  */
+.socials {
+  flex: 1 1 calc(25% - 20px);
+  justify-items: center;
+}
+
+.socials-two {
+  margin-left: 50%;
+  margin-right: 50%;
 }
 
 .gallery {
@@ -22,10 +77,9 @@ body {
 
 .gallery-item {
   flex: 1 1 calc(25% - 20px);
-  /* responsive item size */
   box-sizing: border-box;
   overflow: hidden;
-  border: 1px solid #ddd;
+  border: 1px solid var(--popgreen);
 }
 
 .gallery-item img {
