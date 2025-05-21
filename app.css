@@ -43,7 +43,7 @@ body {
   color: var(--green);
   border: 1px solid var(--green);
   padding: 1vh;
-  font-size: 85%;
+  font-size: 100%;
 }
 
 .container {
@@ -59,12 +59,16 @@ body {
 /* socials  */
 .socials {
   flex: 1 1 calc(25% - 20px);
-  justify-items: center;
+  display: flex;
+  max-width: 100%;
+}
+
+.socials-one {
+  width: 50%;
 }
 
 .socials-two {
-  margin-left: 50%;
-  margin-right: 50%;
+  width: 70%;
 }
 
 /* gallery */
@@ -127,17 +131,18 @@ body {
 
 .modal-content {
   margin: auto;
-  display: block;
+  display: flex;
   width: 80%;
   max-width: 70%;
-  margin-top: 3%;
+  align-self: center;
+  margin-top: 1%;
 }
 
 .close {
   position: absolute;
   top: 20px;
   right: 35px;
-  color: #fff;
+  color: var(--popgreen);
   font-size: 40px;
   font-weight: bold;
   transition: 0.3s;
