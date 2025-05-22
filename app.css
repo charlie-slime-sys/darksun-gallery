@@ -193,6 +193,18 @@ iframe {
   border: 3px solid var(--green);
 }
 
+@media (max-width: 900px) {
+  iframe {
+    display: none;
+  }
+}
+
+@media (max-width: 600px) {
+  iframe {
+    display: none;
+  }
+}
+
 .link-index {
   color: var(--green);
   font-size: 150%;
