@@ -108,7 +108,12 @@ a {
   box-sizing: border-box;
   overflow: hidden;
   border: 1px solid var(--popgreen);
+  /* transition: 1s ease; */
 }
+
+/* .gallery-item :hover {
+  box-shadow: 0 8px 20px #11ff00;
+} */
 
 .gallery-item img {
   width: 100%;
